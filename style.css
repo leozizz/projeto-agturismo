@@ -38,7 +38,7 @@ header .menu{
     justify-content: space-between;
 }
 
-header .lista-menu{
+header .menu-list{
     display: flex;
     max-width: 260px;
     width: 100%;
@@ -46,7 +46,7 @@ header .lista-menu{
     align-items: center;
 }
 
-.lista-menu li a{
+.menu-list li a{
     color: white;
 }
 
@@ -56,17 +56,17 @@ header .lista-menu{
     justify-content: space-between;
 }
 
-.home .texto-home{
+.home .home-text{
     min-height: 200px;
 }
 
-.texto-home h1{
+.home-text h1{
     color: #122A57;
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-.texto-home a{
+.button{
     background: #122A57;
     color: white;
     text-align: center;
@@ -80,20 +80,20 @@ header .lista-menu{
     margin-bottom: 10px;
 }
 
-#quem-somos{
+#about{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
 }
 
-#quem-somos h2{
+#about h2{
     font-size: 32px;
     color: #122A57;
     display: flex;
     margin-bottom: 20px;
 }
 
-#quem-somos h2::before{
+#about h2::before{
     content: "";
     height: 50px;
     width: 5px;
@@ -102,12 +102,12 @@ header .lista-menu{
     position: relative;
 }
 
-#quem-somos p{
+#about p{
     margin-bottom: 10px;
     width: 90%;
 }
 
-#quem-somos img{
+#about img{
     min-width: 420px;
 }
 
@@ -161,4 +161,48 @@ header .lista-menu{
 .services img{
     width: 80%;
     margin: auto;
+}
+
+#plans{
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.plan-list{
+    display: flex;
+    align-items: flex-end;
+}
+
+.plans{
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.plans h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.plans h3::after{
+    content: "";
+    background: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plans .button {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.plans ul{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }
