@@ -115,13 +115,13 @@ header .menu-list{
     background: #122A57;
 }
 
-#servicos{
+#services{
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-#servicos h2{
+#services h2{
     color: white;
     font-size: 32px;
     margin-bottom: 20px;
@@ -166,11 +166,18 @@ header .menu-list{
 #plans{
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 50px;
+}
+
+#plans h2{
+    font-size: 32px;
+    color: #122A57;
 }
 
 .plan-list{
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .plans{
@@ -178,6 +185,7 @@ header .menu-list{
     border: 5px solid #122A57;
     margin-right: 20px;
     padding: 10px;
+    max-width: 240px;
 }
 
 .plans h3{
@@ -185,6 +193,7 @@ header .menu-list{
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 
 .plans h3::after{
@@ -202,7 +211,81 @@ header .menu-list{
 }
 
 .plans ul{
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: column;
+}
+
+.plans ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.plans ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #122A57;
+    margin-right: 5px;
+}
+
+footer{
+    background: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: white;
+}
+
+/* mobile */
+@media (max-width: 920px){
+
+    .flex-items{
+        flex-direction: column;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+    }
+
+    .home .home-text{
+        width: 100%;
+    }
+
+    #about{
+        flex-direction: column-reverse;
+    }
+
+    #about img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .services-list{
+        flex-direction: column;
+    }
+
+    .services img{
+        width: 50%;
+        margin: auto;
+    }
+
+    .plan-list{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .plan-list .plans{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
