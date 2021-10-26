@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-items{
+    display: flex;
+    max-width: 920px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    background: #122A57;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+header .menu-list{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list li a{
+    color: white;
+}
+
+.home{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .home-text{
+    min-height: 200px;
+}
+
+.home-text h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.button{
+    background: #122A57;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#about{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#about h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background: #122A57;
+    position: relative;
+}
+
+#about p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#about img{
+    min-width: 420px;
+}
+
+.services-container{
+    background: #122A57;
+}
+
+#services{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#services h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list .services{
+    text-align: center;
+}
+
+.services a{
+    width: 120px;
+    background: white;
+    color: #122A57;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+}
+
+.services p{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+.services img{
+    width: 80%;
+    margin: auto;
+}
+
+#plans{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#plans h2{
+    font-size: 32px;
+    color: #122A57;
+}
+
+.plan-list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.plans{
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+    max-width: 240px;
+}
+
+.plans h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plans h3::after{
+    content: "";
+    background: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.plans .button {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.plans ul{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.plans ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.plans ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #122A57;
+    margin-right: 5px;
+}
+
+footer{
+    background: #122A57;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: white;
+}
